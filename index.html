@@ -5,44 +5,85 @@
     <title>Sam Lalezari</title>
 
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,1000;1,700&display=swap" rel="stylesheet"> 
     <style>
-        /* CSS HEX
-https://coolors.co/faf3dd-00171f-6e6a6f-809848-8fb8de
+        /* 
+       https://coolors.co/f4faff-dee7e7-cb904d-4f646f-535657
+       CSS HEX
+        --alice-blue: #f4faffff;
+        --platinum: #dee7e7ff;
+        --butterscotch: #cb904dff;
+        --paynes-gray: #4f646fff;
+        --davys-gray: #535657ff;
 
---eggshell: #faf3ddff;
---rich-black: #00171fff;
---dim-gray: #6e6a6fff;
---moss-green: #809848ff;
---jordy-blue: #8fb8deff; 
+        CSS HEX (ADJUSTED LIGHT)
+        https://coolors.co/f5faff-dceded-d7984f-46738a-4b6872
+            --alice-blue: #f5faffff;
+            --azure-web: #dcededff;
+            --butterscotch: #d7984fff;
+            --paynes-gray: #46738aff;
+            --paynes-gray-2: #4b6872ff;
 
+        CSS HEX (ADJUSTED DARK)
+        https://coolors.co/005daa-415a5a-4a3115-1b2226-1c1d1d
+        --lapis-lazuli: #005daaff;
+        --dark-slate-gray: #415a5aff;
+        --caf-noir: #4a3115ff;
+        --eerie-black: #1b2226ff;
+        --eerie-black-2: #1c1d1dff;
 */
         body {
-            background-color: #6e6a6fff;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color: #dee7e7ff;
+            font-family: 'Nunito Sans', sans-serif;
+            color:  #1c1d1dff;
+            font-weight: 300;
         }
 
         .container {
             padding: 1rem;
-            background-color: #faf3ddff;
+            background-color: white;
             border-radius: 10px;
             max-width: 800px;
             margin: auto;
+            box-shadow: 0px 0px 10px 3px hsla(195, 21%, 37%, 25%);
         }
 
-        h1, h2, h3 {
-            color: #00171fff;
+        .container h1:first-of-type {
+            margin-top:0;
+        }
+
+        .header {
+            color: #415a5aff;
+            font-weight: 1000;
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: #1b2226ff;
+            font-weight: 400;
         }
 
         a {
-            color: rgb(39, 61, 81);
+            color:#4b6872ff;
         }
     </style>
 </head>
 
 <body>
     <div class="container">
-        <h1>Sam Lalezari</h1>
+        <h1 class="header">Sam Lalezari</h1>
+        <div>
+            Welcome to my website! It is still a work in progress, but in the mean time check out the links below!
+        </div>
         <h2>Links</h2>
+        <h3>Socials</h3>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/sam-lalezari-18261583/">LinkedIn</a></li>
+            <li><a href="https://github.com/lalezaris">GitHub - @lalezaris</a></li>
+        </ul>
         <h3>Frontend Mentor</h3>
         <ul>
             <li><a href="/frontend-mentor-00-qr-code-component">QR Code Component</a></li>
