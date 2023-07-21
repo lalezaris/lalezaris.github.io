@@ -1,4 +1,4 @@
-        /* 
+/* 
        https://coolors.co/f4faff-dee7e7-cb904d-4f646f-535657
        CSS HEX
         --alice-blue: #f4faffff;
@@ -22,73 +22,89 @@
         --eerie-black-2: #1c1d1dff;
 */
 body {
-    background-color: #dee7e7ff;
-    font-family: 'Nunito Sans', sans-serif;
-    color:  #1c1d1dff;
-    font-weight: 300;
+  background-color: #dee7e7ff;
+  font-family: "Nunito Sans", sans-serif;
+  color: #1c1d1dff;
+  font-weight: 300;
 }
 
 .container {
-    padding: 1rem;
-    background-color: white;
-    border-radius: 10px;
-    max-width: 800px;
-    margin: auto;
-    box-shadow: 0px 0px 10px 3px hsla(195, 21%, 37%, 25%);
+  padding: 1rem;
+  background-color: white;
+  border-radius: 10px;
+  max-width: 800px;
+  margin: auto;
+  box-shadow: 0px 0px 10px 3px hsla(195, 21%, 37%, 25%);
 }
 
-.container:not(:first-of-type) {
-    margin-top: 2rem;
+.container:not(:first-child) {
+  margin-top: 2rem;
 }
 
-.container h1:first-of-type {
-    margin-top:0;
+.container h1:first-child {
+  margin-top: 0;
 }
 
 .header {
-    color: #415a5aff;
-    font-weight: 1000;
+  color: #415a5aff;
+  font-weight: 1000;
 }
 
 h1,
 h2,
 h3 {
-    color: #1b2226ff;
-    font-weight: 400;
+  color: #1b2226ff;
+  font-weight: 400;
 }
 
 a {
-    color:#4b6872ff;
+  color: #4b6872ff;
 }
 
 .navigation {
-    padding: .25rem 1rem;
+  padding: 0.25rem 1rem;
 }
 
 .navigation a {
-    color:  #1b2226ff;
-    text-decoration: none;
+  color: #1b2226ff;
 }
 
 .navigation li:first-of-type {
-    margin-left: 0;
-    padding-left: 0;
-    border-left: none;
+  margin-left: 0;
+  padding-left: 0;
+  border-left: none;
 }
 
 .navigation li {
-    margin-left: 1rem;
-    padding-left: 1rem;
-    border-left: 1px solid  #1b2226ff;
+  margin-left: 1rem;
+  padding-left: 1rem;
+  border-left: 1px solid #1b2226ff;
 }
 
 .navigation ul {
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 0;
 }
 
 .current {
-    font-style: italic;
+  font-style: italic;
+}
+
+@media screen and (max-width: 576px) {
+  .navigation ul {
+    flex-direction: column;
+    list-style-type: square;
+    padding-left: 1rem;
+  }
+  .navigation li {
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
+  .navigation a {
+    text-decoration: underline;
+  }
 }
